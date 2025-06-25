@@ -14,7 +14,7 @@ const allStudent = [
     {name: 'Zainab', age: 22, course: 'History'},
     {name: 'Chuka', age: 21, course: 'Geography'},
 ]
-app.get('/api', (req,res)=>
+app.get(home, (req,res)=>
 {
     try {
         res.status(201).json({message:allStudent})
@@ -23,10 +23,10 @@ app.get('/api', (req,res)=>
     }
 })
 
-app.get(home, (req,res)=> {
-    console.log('/ has been accessed');
-    res.send('Mr femi is going to')
-})
+// app.get(home, (req,res)=> {
+//     console.log('/ has been accessed');
+//     res.send('Mr femi is going to')
+// })
 
 
 app.get(htmlPage,(req,res)=> {
